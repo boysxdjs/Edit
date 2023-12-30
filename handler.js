@@ -1534,7 +1534,7 @@ global.dfail = (type, m, conn) => {
     owner: '*[ 🕷️ ] Paraaa Este Comando Solo Puede Ser Usado Por El Mas Guapo Osea Yo*',
     mods: '*[ 🕷️ ] Este Comando Solo Puede Ser Usado Por Admins Y El Bot.*',
     premium: '*[ 🕷️ ] Si No Eres Usuario Vip Olvidate De Este Comando XD.*',
-    group: '*[ 🕷️ ] Solo Apto Para Grupps Mij@*',
+    group: '*[ 🕷️ ] Solo Apto Para Grupos Mij@*',
     private: '*[ 🕷️ ] Este Comando Solo Se Puede Usar En El Chat Privadp Del Bot*',
     admin: '*[ 🕷️ ] Solo Puede Ser Usado Por Admins Bldx*',
     botAdmin: '*[ 🕷️ ] Es Necesario Que El Mas Guapo Osea Yo Tenga Admin*',
@@ -1542,7 +1542,7 @@ global.dfail = (type, m, conn) => {
     restrict: '*[ 🕷️ ] Este Comando Fie Desactivado Por El Mas Guapo*',
   }[type];
   const aa = {quoted: m, userJid: conn.user.jid};
-  const prep = generateWAMessageFromContent(m.chat, {extendedTextMessage: {text: msg, contextInfo: {externalAdReply: {title: '🕷️ 𝗦𝗣𝗜𝗗𝗘𝗥 𝗕𝗢𝗧 🕷️', body: '🕷️ 𝗦𝗣𝗜𝗗𝗘𝗥 𝗕𝗢𝗧 🕷️', thumbnail: imagen1, sourceUrl: 'https://instagram.com/spider.ventas.bot'}}}}, aa);
+  const prep = generateWAMessageFromContent(m.chat, {extendedTextMessage: {text: msg, contextInfo: {externalAdReply: {title: '🕷️ 𝗦𝗣𝗜𝗗𝗘𝗥 𝗕𝗢𝗧 🕷️', body: '🕷️ 𝗦𝗣𝗜𝗗𝗘𝗥 𝗕𝗢𝗧 🕷️', thumbnail: imagen1, sourceUrl: 'https://instagram.com/fantasmin.ventas.bot'}}}}, aa);
   if (msg) return conn.relayMessage(m.chat, prep.message, {messageId: prep.key.id});
 };
 
